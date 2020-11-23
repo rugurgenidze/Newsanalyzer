@@ -1,0 +1,9 @@
+@import url(./_center/section_center.css);
+
+.section{
+  width: 100%;
+  display: flex;
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}

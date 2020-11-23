@@ -1,0 +1,14 @@
+.card__holder{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20px auto 20px;
+  row-gap: 18px;
+  height: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .card__holder{
+    padding: 16px;
+  }
+}

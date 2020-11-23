@@ -1,0 +1,11 @@
+.tech__holder{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1220px) {
+  .tech__holder{
+    flex-direction: column;
+  }
+}
+

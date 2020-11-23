@@ -1,0 +1,30 @@
+.search-content__analytics-link {
+  display: flex;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity .3s;
+  margin: 16px 0 10px;
+  justify-self: self-end;
+}
+
+.search-content__analytics-link:hover {
+  opacity: .6;
+}
+
+.search-content__analytics-link::after{
+  content: '';
+  background-image: url('../../../images/arrow.svg');
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 620px) {
+  .search-content__analytics-link {
+    align-self: flex-start;
+
+  }
+}

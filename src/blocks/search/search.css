@@ -1,0 +1,25 @@
+@import url(./__holder/search__holder.css);
+@import url(./__elements/search__elements.css);
+@import url(./__lead/search__lead.css);
+@import url(./__input/search__input.css);
+.search{
+  font-family: 'Roboto Slab', 'Roboto', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+@media (max-width: 768px) {
+  .search {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .search {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

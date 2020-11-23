@@ -1,0 +1,16 @@
+@import url(./__holder/search-content__holder.css);
+@import url(./__loader/search-content__loader.css);
+@import url(./__loader-text/search-content__loader-text.css);
+
+@import url(./__title/search-content__title.css);
+@import url(./__text/search-content__text.css);
+@import url(./__not-found/search-content__not-found.css);
+@import url(./__analytics-link/search-content__analytics-link.css);
+@import url(./__list/search-content__list.css);
+.search-content{
+  font-family: 'Roboto Slab', 'Roboto', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0;
+}

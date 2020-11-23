@@ -1,0 +1,9 @@
+.header__background{
+  width: 100%;
+  position: absolute;
+  background-image: url(../../../images/background-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}

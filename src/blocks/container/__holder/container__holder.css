@@ -1,0 +1,19 @@
+@import url(./_analytics/container__holder_analytics.css);
+
+.container__holder{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+@media (max-width:768px) {
+  .container__holder{
+    margin-bottom: 22px;
+  }
+}
+@media (max-width:450px) {
+  .container__holder{
+    margin-bottom: 26px;
+  }
+}

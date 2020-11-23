@@ -1,0 +1,16 @@
+.section_center{
+  padding-left: 104px;
+  padding-right: 104px;
+}
+@media (max-width: 768px) {
+  .section_center{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .section_center{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

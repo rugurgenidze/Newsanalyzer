@@ -1,0 +1,18 @@
+@import url(./_active/header__link_active.css);
+@import url(./_inactive/header__link_inactive.css);
+
+.header__link {
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-bottom: 26px;
+  text-decoration: none;
+  transition: color .3s, opacity .3s;
+  color: inherit;
+}
+
+.header__link:hover {
+  color: inherit;
+  opacity: 1;
+}

@@ -1,0 +1,16 @@
+.tech__element{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .tech__element{
+    margin: 40px 0 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .tech__element{
+    margin: 22px 0 0;
+  }
+}

@@ -1,0 +1,13 @@
+.footer__social {
+  margin-right: 24px;
+}
+
+.footer__social:last-of-type {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .footer__social {
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,31 @@
+.search__input {
+  font-family: 'Roboto';
+  font-weight: normal;
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 20px 24px;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 2px solid #d1d2d6;
+  position: absolute;
+}
+
+.search__input:focus {
+  color: #1a1b22;
+  border: 1px solid #64ebfd;
+}
+@media (max-width: 768px) {
+  .search__input {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  .search__input {
+    position: relative;
+    margin-bottom: 14px;
+  }
+}

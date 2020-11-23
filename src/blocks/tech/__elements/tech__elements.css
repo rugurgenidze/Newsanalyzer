@@ -1,0 +1,25 @@
+.tech__elements {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  gap: 40px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .tech__elements{
+    align-self: center;
+  }
+}
+
+@media (max-width: 670px) {
+  .tech__elements{
+    grid-template-columns: repeat(2, 120px);
+    gap: 33px;
+  }
+}
+
+@media (max-width: 520px) {
+  .tech__elements{
+    row-gap: 0;
+  }
+}

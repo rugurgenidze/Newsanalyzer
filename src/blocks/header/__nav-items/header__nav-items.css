@@ -1,0 +1,6 @@
+.header__nav-items{
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  color: inherit;
+}

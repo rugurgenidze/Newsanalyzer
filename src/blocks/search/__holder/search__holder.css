@@ -1,0 +1,11 @@
+.search__holder{
+  display: flex;
+  flex-direction: column;
+  max-width: 608px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .search__holder{
+    max-width: 452px;
+  }
+}

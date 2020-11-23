@@ -1,0 +1,12 @@
+.footer__link {
+  font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: color .3s;
+}
+
+.footer__link:hover {
+  color: #b6bcbf;
+}

@@ -1,0 +1,21 @@
+.card__text{
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .card__text {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+}
+
+@media (max-width: 500px) {
+  .card__text {
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+  }
+}

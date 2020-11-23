@@ -1,0 +1,9 @@
+@import url(./_color/container_color.css);
+@import url(./__holder/container__holder.css);
+@import url(./__title/container__title.css);
+.container{
+  font-family: 'Roboto Slab', 'Roboto', 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}

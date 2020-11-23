@@ -1,0 +1,16 @@
+.header__link_active {
+  border-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-color:inherit;
+}
+@media (max-width: 768px) {
+  .header__link_active {
+    top: 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__link_active {
+    top: 35px;
+  }
+}

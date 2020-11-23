@@ -1,0 +1,16 @@
+@import url(./__picture/card__picture.css);
+@import url(./__holder/card__holder.css);
+@import url(./__date/card__date.css);
+@import url(./__text/card__text.css);
+@import url(./__title/card__title.css);
+@import url(./__origin/card__origin.css);
+@import url(./__paragraph/card__paragraph.css);
+@import url(./__link/card__link.css);
+
+.card{
+  display: block;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
