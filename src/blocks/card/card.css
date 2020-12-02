@@ -8,9 +8,10 @@
 @import url(./__link/card__link.css);
 
 .card{
-  display: block;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 400px;
+
 }

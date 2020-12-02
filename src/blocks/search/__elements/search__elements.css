@@ -5,14 +5,14 @@
   position: relative;
   margin-top: 64px;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .search__elements {
     flex-direction: column;
     margin-top: 22px;
   }
-}
+} */
 
-@media (max-width: 450px) {
+@media (max-width: 320px) {
   .search__elements {
     flex-direction: column;
   }

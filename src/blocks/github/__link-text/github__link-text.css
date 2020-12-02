@@ -1,20 +1,13 @@
-.commits-story__link{
+.github__link-text {
   display: flex;
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  text-decoration: none;
   color: inherit;
-  transition: opacity .3s;
-  margin: 16px 0 10px;
-  justify-self: self-end;
+  align-self: flex-start;
 }
-.commits-story__link:hover {
-  opacity: .6;
-}
-
-.commits-story__link::after{
+.github__link-text::after{
   content: '';
   background-image: url('../../../images/arrow.svg');
   background-repeat: no-repeat;

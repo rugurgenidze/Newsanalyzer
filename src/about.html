@@ -66,7 +66,7 @@
           </section>
 
           <section class="author section section_center">
-            <div class="author__content container__holder">
+            <div class="author__content section section_center">
               <picture class="author__photo">
                 <source media="(max-width: 420px)" srcset="<%=require('./images/avatar272.jpg').default%>" type="image/jpg">
                 <source media="(max-width: 769px)" srcset="<%=require('./images/avatar232.jpg').default%>"type="image/jpg">
@@ -88,91 +88,80 @@
               </div>
             </div>
           </section>
-          <section class="commits-story container container_color">
-            <div class="container__holder section section_center">
-              <h2 class="content-title content-title_about container__title">История коммитов из&nbsp;GitHub</h2>
-              <a class="commits-story__link" href="https://github.com/" target="_blank">Открыть в  Github</a>
+
+          <section class="github container container_color">
+            <div class="container__holder container__holder_github section section_center">
+              <h3 class="container__title">История коммитов из&nbsp;GitHub</h3>
+                <a href="https://github.com/" target="_blank" class="github__link">
+                  <span class="github__link-text">Открыть&nbsp;в&nbsp;Github</span>
+                </a>
             </div>
 
-            <div class="commits-story__container">
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="<%=require('./images/gh_avatar.jpg').default%>" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+
+                    <div class="swiper-slide commit-card">
+                      <p class="commit-card__date">14 августа, 2019</p>
+                      <div class="commit-card__header">
+                        <img src="<%=require('./images/gh_avatar.jpg').default%>" alt="фото автора" class="commit-card__userpic">
+                        <div class="commit-card__person">
+                          <h3 class="commit-card__usename">Антон Долинин</h3>
+                          <p class="commit-card__email">anton@yandex.ru</p>
                         </div>
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-                    </a>
-                </div>
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="<%=require('./images/gh_avatar.jpg').default%>" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div>
+                      </div>
+                      <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                    </div>
+
+                    <div class="swiper-slide commit-card">
+                      <p class="commit-card__date">14 августа, 2019</p>
+                      <div class="commit-card__header">
+                        <img src="<%=require('./images/gh_avatar.jpg').default%>" alt="фото автора" class="commit-card__userpic">
+                        <div class="commit-card__person">
+                          <h3 class="commit-card__usename">Антон Долинин</h3>
+                          <p class="commit-card__email">anton@yandex.ru</p>
                         </div>
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-                    </a>
-                </div>
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="<%=require('./images/gh_avatar.jpg').default%>" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div>
+                      </div>
+                      <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                    </div>
+
+                    <div class="swiper-slide commit-card">
+                      <p class="commit-card__date">14 августа, 2019</p>
+                      <div class="commit-card__header">
+                        <img src="<%=require('./images/gh_avatar.jpg').default%>" alt="фото автора" class="commit-card__userpic">
+                        <div class="commit-card__person">
+                          <h3 class="commit-card__usename">Антон Долинин</h3>
+                          <p class="commit-card__email">anton@yandex.ru</p>
                         </div>
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-                    </a>
-                </div>
-                <!-- <div class="commit-card">
-                    <a  href="https://github.com" target="_blank" class="commit-card__link">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="<%=require('./images/gh_avatar.jpg').default%>" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div>
+                      </div>
+                      <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                    </div>
+
+                    <div class="swiper-slide commit-card">
+                      <p class="commit-card__date">14 августа, 2019</p>
+                      <div class="commit-card__header">
+                        <img src="<%=require('./images/gh_avatar.jpg').default%>" alt="фото автора" class="commit-card__userpic">
+                        <div class="commit-card__person">
+                          <h3 class="commit-card__usename">Антон Долинин</h3>
+                          <p class="commit-card__email">anton@yandex.ru</p>
                         </div>
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-                    </a>
-                </div> -->
-                <div class="commit-card">
-                    <a class="commit-card__link" href="https://github.com" target="_blank">
-                        <p class="commit-card__data">14 августа, 2019</p>
-                        <div class="commit-card__author">
-                            <img class="commit-card__foto" src="<%=require('./images/gh_avatar.jpg').default%>" alt="фото автора">
-                            <div class="commit-card__names">
-                                <h4 class="commit-card__name">Антон Долинин</h4>
-                                <p class="commit-card__mail">anton@yandex.ru</p>
-                            </div>
-                        </div>
-                        <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-
-                        developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-                    </a>
-                </div>
-                <img class="commits-story__arrow commits-story__arrow_left" src="<%=require('./images/left.svg').default%>" alt="Стрелка влево">
-                <img class="commits-story__arrow commits-story__arrow_right" src="<%=require('./images/right.svg').default%>" alt="Стрелка вправо">
+                      </div>
+                      <p class="commit-card__text">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+                    </div>
+
+              </div>
+
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
             </div>
-            <picture class="commits-story__points">
-                <source class="commits-story__small-points" srcset="<%=require('./images/points_five.svg').default%>" media="(max-width: 700px)">
-                <img class="commits-story__big-points" src="<%=require('./images/points.svg').default%>" alt="Значок прокрутки">
-            </picture>
-        </section>
+              <div class="swiper-pagination__container">
+                <div class="swiper-pagination"></div>
+              </div>
+
+            <a href="https://github.com" target="_blank" class="github__button">Открыть в GitHub</a>
+          </section>
+
+
 
         </main>
         <footer class="footer section section_center">
@@ -200,7 +189,7 @@
               </li>
               <li class="footer__social">
                 <a href="https://www.facebook.com/" class="footer__social-link">
-                  <img src="<%=require('./images/fb.svg').default%>" alt="Иконка Фейсбук" class="footer__social-icon" target="_blank">
+                  <img src="<%=require('./images/fb.svg').default%>" alt="Иконка Фейсбук" class="footer__social-icon">
                 </a>
               </li>
             </ul>

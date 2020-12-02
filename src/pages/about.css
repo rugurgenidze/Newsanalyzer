@@ -1,6 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
-
+@import url(../vendor/swiper-bundle.css);
 @import url(../blocks/root/root.css);
 @import url(../blocks/content/content.css);
 @import url(../blocks/container/container.css);
@@ -12,5 +12,6 @@
 @import url(../blocks/author/author.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/tech/tech.css);
-@import url(../blocks/commits-story/commits-story.css);
+@import url(../blocks/github/github.css);
 @import url(../blocks/commit-card/commit-card.css);
+@import url(../blocks/commits-story/commits-story.css);

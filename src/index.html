@@ -34,7 +34,7 @@
               <h1 class="title">Что в мире творится?</h1>
               <p class="search__lead">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
               <form class="search__elements">
-                <input type="text" class="search__input" placeholder="Введите тему новости">
+                <input type="text" class="search__input" placeholder="Введите тему новости" required>
                 <button type="submit" class="button button_blue">Искать</button>
               </form>
             </div>
@@ -145,10 +145,8 @@
                       <p class="card__date">2 августа, 2019</p>
                       <div class="card__paragraph">
                         <h3 class="card__title">Лесные огоньки: история одной фотографии</h3>
-                        <p class="card__text">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-                          <p class="card__text">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать
-                            о необходимости их сохранения.
-                            В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+                        <p class="card__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть
+                          ускользающую красоту одного из местных чудес природы</p>
                       </div>
                       <p class="card__origin">Афиша</p>
                     </div>
@@ -202,12 +200,12 @@
             <ul class="footer__socials">
               <li class="footer__social">
                 <a href="https://github.com/">
-                  <img src="<%=require('./images/github.svg').default%>" alt="Иконка Гитхаб" class="footer__social-icon" target="_blank">
+                  <img src="<%=require('./images/github.svg').default%>" alt="Иконка Гитхаб" class="footer__social-icon"">
                 </a>
               </li>
               <li class="footer__social">
                 <a href="https://www.facebook.com/">
-                  <img src="<%=require('./images/fb.svg').default%>" alt="Иконка Фейсбук" class="footer__social-icon" target="_blank">
+                  <img src="<%=require('./images/fb.svg').default%>" alt="Иконка Фейсбук" class="footer__social-icon">
                 </a>
               </li>
             </ul>
