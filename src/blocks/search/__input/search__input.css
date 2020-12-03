@@ -16,16 +16,16 @@
   color: #1a1b22;
   border: 1px solid #64ebfd;
 }
-@media (max-width: 769px) {
-  .search__input {
-    min-height: 56px;
 
+@media (max-width: 768px) {
+  .search__input {
+
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 }
-
-@media (max-width: 320px) {
-  .search__input {
+@media (max-width: 450px){
+  .search__input{
     position: relative;
-    margin-bottom: 14px;
   }
 }

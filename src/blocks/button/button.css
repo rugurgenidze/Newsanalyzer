@@ -18,7 +18,13 @@
   z-index: 1;
   transition: background-color .2s, box-shadow .2s;
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
+  .button {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+@media (max-width: 450px) {
   .button {
     width: 100%;
     padding-top: 16px;

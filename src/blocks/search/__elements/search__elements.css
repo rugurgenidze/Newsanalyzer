@@ -12,7 +12,18 @@
   }
 } */
 
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
+  .search__elements {
+    flex-direction: column;
+  }
+} */
+@media (max-width: 768px) {
+  .search__elements {
+    margin-top: 42px;
+  }
+}
+
+@media (max-width: 450px) {
   .search__elements {
     flex-direction: column;
   }

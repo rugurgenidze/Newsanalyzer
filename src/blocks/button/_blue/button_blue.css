@@ -18,3 +18,9 @@
   border-color: #fff;
 }
 
+@media (max-width: 450px) {
+  .button_blue {
+    position: relative;
+    margin-top: 14px;
+  }
+}
