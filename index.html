@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NewsAnalyzer</title>
     <link rel="shortcut icon" href="./images/favico.svg">
-    <link rel="stylesheet" href="./index/index.765577b42dd0100824b8.css">
-    <script defer src="./index/index.d41d8cd98f00b204e980.js"></script>
+    <link rel="stylesheet" href="./index/index.4aa5f599e7ebd33bd0bb.css">
+    <script defer src="./index/index.5d7cd71e2ff2898ca0b1.js"></script>
     </head>
     <body>
       <div class="root">
@@ -33,9 +33,11 @@
             <div class="search__holder container">
               <h1 class="title">Что в мире творится?</h1>
               <p class="search__lead">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-              <form class="search__elements">
-                <input type="text" class="search__input" placeholder="Введите тему новости" required>
-                <button type="submit" class="button button_blue">Искать</button>
+              <form class="search__elements" id="search-form" novalidate>
+                <input type="text" id="search-input" class="search__input" placeholder="Введите тему новости" minlength="2" maxlength="30">
+                <span class="search__error"></span>
+                <button type="submit" id="search-button" class="button button_blue">Искать</button>
+
               </form>
             </div>
           </div>
@@ -43,44 +45,47 @@
 
         <main class="content">
 
-          <section class="search-content container container_color">
+          <section id="preloader" class="search-content container container_color">
             <div class="search-content__holder">
               <i class="search-content__loader"></i>
               <p class="search-content__loader-text">Идет поиск новостей...</p>
             </div>
           </section>
 
-          <section class="search-content container container_color">
+          <section id ="not-found-message" class="search-content container container_color">
             <div class="search-content__holder">
               <i class="search-content__not-found"></i>
-              <h2 class="search-content__title">Ничего не найдено</h2>
-              <p class="search-content__text">К сожалению по вашему запросу
+              <h2 id="not-found-title"class="search-content__title">Ничего не найдено</h2>
+              <p id="not-found-text" class="search-content__text">К сожалению по вашему запросу
               ничего не найдено.</p>
             </div>
           </section>
 
-          <section class="search-content container container_color">
+          <section id="search-section" class="search-content container container_color">
             <div class="search-content__holder section section_center">
               <div class="container__holder container__holder_analytics">
                 <h2 class="container__title">Результаты поиска</h2>
                 <a class="search-content__analytics-link" href="./paper.html">Посмотреть аналитику</a>
               </div>
               <ul class="search-content__list">
-                <li class="card">
-                  <a class="card__link "href="https://lenta.ru" target="_blank">
-                    <img  class="card__picture" src="./images/image_08.jpg" alt="Фото новости">
-                    <div class="card__holder">
-                      <p class="card__date">2 августа, 2019</p>
-                      <div class="card__paragraph">
-                        <h3 class="card__title">Национальное достояние – парки</h3>
-                        <p class="card__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система
-                          национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
+
+      <!--           <template id="card-template">
+                  <li class="card">
+                    <a class="card__link" href="#" target="_blank">
+                      <img  class="card__picture">
+                      <div class="card__holder">
+                        <p class="card__date"></p>
+                        <div class="card__paragraph">
+                          <h3 class="card__title"></h3>
+                          <p class="card__text"></p>
+                        </div>
+                        <p class="card__origin"></p>
                       </div>
-                      <p class="card__origin">Лента.ру</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="card">
+                    </a>
+                  </li>
+                </template> -->
+
+<!--                 <li class="card">
                   <a class="card__link "href="https://meduza.io" target="_blank">
                     <img  class="card__picture" src="./images/image_04.jpg" alt="Фото новости">
                     <div class="card__holder">
@@ -151,9 +156,9 @@
                       <p class="card__origin">Афиша</p>
                     </div>
                   </a>
-                </li>
+                </li> -->
               </ul>
-              <button type="submit" class="button button_white">Показать еще</button>
+              <button type="submit" id="show-else" class="button button_white">Показать еще</button>
             </div>
           </section>
           <section class="author">

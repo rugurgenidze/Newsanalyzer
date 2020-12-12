@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NewsAnalyzer</title>
     <link rel="shortcut icon" href="./images/favico.svg">
-    <link rel="stylesheet" href="./paper/paper.1b6287ad4ada8a53a264.css">
-    <script defer src="./paper/paper.d41d8cd98f00b204e980.js"></script>
+    <link rel="stylesheet" href="./paper/paper.8d380d651d8ad53ca14a.css">
+    <script defer src="./paper/paper.cf16edf817bbfa964a3c.js"></script>
     </head>
     <body>
       <div class="root">
@@ -44,8 +44,8 @@
 
           <section class="result container section section_center">
             <h2 class="container__title">Вы спросили: «Путешествия»</h2>
-            <p class="result__text">Новостей за неделю: <span class="result__text result__text_number">34 324</span></p>
-            <p class="result__text">Упоминаний в загаловках: <span class="result__text result__text_number">235</span></p>
+            <p class="result__text">Новостей за неделю: <span id = "for-week" class="result__text result__text_number"></span></p>
+            <p class="result__text">Упоминаний в загаловках: <span id = "in-title" class="result__text result__text_number"></span></p>
           </section>
 
           <section class="diagram container container_color">
@@ -53,7 +53,10 @@
               <div class="diagram__container">
                 <h3 class="diagram__title">Аналитика по дням</h3>
                 <div class="diagram__columns">
-                  <p class="diagram__column-title">Дата <span>(август)</span></p>
+                  <div class="diagram__month">
+                    <p class="diagram__column-title">Дата</p>
+                    <p id="month" class="diagram__column-title"></p>
+                  </div>
                   <p class="diagram__column-title">Кол-во упоминаний</p>
                 </div>
                 <div class="line"></div>
@@ -66,48 +69,49 @@
                 </ol>
                 <ol class="diagram__days">
                   <li class="diagram__day">
-                    <p class="diagram__date">19, пн</p>
-                    <figure class="diagram__line" style="width: 15%">
-                      <figcaption class="diagram__percent">15</figcaption>
+                    <p class="diagram__date"></p>
+                    <figure class="diagram__line">
+                      <figcaption class="diagram__percent"></figcaption>
                     </figure>
                   </li>
                   <li class="diagram__day">
-                    <p class="diagram__date">20, вт</p>
-                    <figure class="diagram__line" style="width: 18%">
-                      <figcaption class="diagram__percent">18</figcaption>
+                    <p class="diagram__date"></p>
+                    <figure class="diagram__line">
+                      <figcaption class="diagram__percent"></figcaption>
                     </figure>
                   </li>
                   <li class="diagram__day">
-                    <p class="diagram__date">21, ср</p>
-                    <figure class="diagram__line" style="width: 11%">
-                      <figcaption class="diagram__percent">11</figcaption>
+                    <p class="diagram__date"></p>
+                    <figure class="diagram__line">
+                      <figcaption class="diagram__percent"></figcaption>
                     </figure>
                   </li>
                   <li class="diagram__day">
-                    <p class="diagram__date">22, чт</p>
-                    <figure class="diagram__line" style="width: 39%">
-                      <figcaption class="diagram__percent">39</figcaption>
+                    <p class="diagram__date"></p>
+                    <figure class="diagram__line">
+                      <figcaption class="diagram__percent"></figcaption>
                     </figure>
                   </li>
                   <li class="diagram__day">
-                    <p class="diagram__date">23, пт</p>
-                    <figure class="diagram__line" style="width: 45%">
-                      <figcaption class="diagram__percent">45</figcaption>
+                    <p class="diagram__date"></p>
+                    <figure class="diagram__line">
+                      <figcaption class="diagram__percent"></figcaption>
                     </figure>
                   </li>
                   <li class="diagram__day">
-                    <p class="diagram__date">24, сб</p>
-                    <figure class="diagram__line" style="width: 73%">
-                      <figcaption class="diagram__percent">73</figcaption>
+                    <p class="diagram__date"></p>
+                    <figure class="diagram__line">
+                      <figcaption class="diagram__percent"></figcaption>
                     </figure>
                   </li>
                   <li class="diagram__day">
-                    <p class="diagram__date">25, вс</p>
-                    <figure class="diagram__line" style="width: 34%">
-                      <figcaption class="diagram__percent">34</figcaption>
+                    <p class="diagram__date"></p>
+                    <figure class="diagram__line">
+                      <figcaption class="diagram__percent"></figcaption>
                     </figure>
                   </li>
                 </ol>
+
                 <ul class="diagram__scale">
                   <li class="diagram__column-title">0</li>
                   <li class="diagram__column-title">25</li>
@@ -123,7 +127,7 @@
 
         <footer class="footer section section_center">
           <div class="footer__holder">
-            <p class="footer__copyright">© 2020  Supersite</p>
+            <p class="footer__copyright">&copy;2020  Supersite</p>
             <nav class="footer__nav">
               <ul class="footer__nav-items">
                 <li class="footer__nav-item">
