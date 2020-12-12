@@ -44,6 +44,7 @@
     "webpack-md5-hash": "0.0.6"
   },
   "dependencies": {
-    "core-js": "3.4.1"
+    "core-js": "3.4.1",
+    "swiper": "^6.3.5"
   }
 }
