@@ -19,6 +19,7 @@ const emptyBlock = document.querySelector('#not-found-message');
 const newsApi = new NewsApi();
 const createCardCallback = (sourceName, cardTitle, publishedAt, cardDescription, urlToImage, url) => new NewsCard(sourceName, cardTitle, publishedAt, cardDescription, urlToImage, url).createNewsCard();
 const dataStorage = new DataStorage();
+
 const searchInput = new SearchInput(searchForm, searchWord, searchButton);
 const newsCardList = new NewsCardList(searchResultsContainer, createCardCallback, emptyBlock, searchResultsButton);
 
@@ -53,11 +54,10 @@ searchForm.addEventListener('submit', function(event) {
       newsCardList.render(dataStorage.getCardsFromDataStorage());
       if (emptyBlock.classList.contains('is-open')) {
           searchResults.classList.remove('is-open');
-          searchInput.reset();
       }
   })
-  .catch(() => {
-      alert('Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз');
+  .catch((err) => {
+      console.log(err);
       preloader.classList.remove('is-open');
   });
 })

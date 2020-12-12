@@ -1,25 +1,32 @@
+
 export class SearchInput {
   constructor(form, searchWord, searchButton) {
       this.form = form;
       this.searchInput = searchWord;
       this.searchButton = searchButton;
-      this.errorElem = form.querySelector('.search__error');
+      this.alertElement = form.querySelector('.alert-message');
 
       this.setEventListeners = this.setEventListeners.bind(this);
   }
 
 
   checkInputValidity() {
+      const alertElement = this.form.querySelector('.alert-message')
       this.searchInput.setCustomValidity("");
 
       if (this.searchInput.validity.valueMissing) {
-          this.searchInput.setCustomValidity(ERROR_MESSAGE);
-          this.errorElem.textContent = this.searchInput.validationMessage;
+        alertElement.textContent = "Это обязательное поле";
+        return false;
+      }
+      if (this.searchInput.validity.tooShort || searchInput.validity.tooLong) {
+        alertElement.textContent = "Должно быть от 2 до 30 символов";
+        return false;
       }
 
-      if (this.searchInput.checkValidity()) {
-          this.errorElem.textContent = "";
-        }
+      else {
+        alertElement.textContent = ''
+        return searchInput.checkValidity()
+      }
   }
 
   setSearchButtonState() {
@@ -36,4 +43,4 @@ export class SearchInput {
   }
 }
 
-import {ERROR_MESSAGE} from '../constants/constants.js';
+

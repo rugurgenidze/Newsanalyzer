@@ -12,6 +12,7 @@
 @import url(../blocks/content/content.css);
 @import url(../blocks/search-content/search-content.css);
 @import url(../blocks/is-open/is-open.css);
+@import url(../blocks/alert-message/alert-message.css);
 
 @import url(../blocks/card/card.css);
 @import url(../blocks/author/author.css);
